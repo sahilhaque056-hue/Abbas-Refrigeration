@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#071b2d">
+  <meta name="description" content="Abbas Refrigeration — AC, cooler, washing machine, refrigerator and geyser repair and service. Contact us on WhatsApp.">
+  <title>Abbas Refrigeration | Repair & Service</title>
+  <style>
+    :root{--navy:#071b2d;--navy2:#0d2b43;--cyan:#35d5e8;--gold:#f3bd58;--white:#f7fbff;--muted:#a9bdca}
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Arial,sans-serif;background:#061522;color:var(--white);line-height:1.6}
+    a{text-decoration:none;color:inherit}
+    .topbar{background:#04101b;border-bottom:1px solid #ffffff18;padding:10px 6%;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:var(--muted);font-size:13px}
+    header{position:sticky;top:0;z-index:10;background:#071b2df2;backdrop-filter:blur(14px);border-bottom:1px solid #ffffff18}
+    nav{max-width:1160px;margin:auto;padding:16px 22px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:850;letter-spacing:.2px}
+    .brand-mark{width:42px;height:42px;border-radius:13px;display:grid;place-items:center;background:linear-gradient(135deg,var(--cyan),#1675a8);color:#061522;font-size:23px;box-shadow:0 8px 24px #35d5e833}
+    .brand small{display:block;color:var(--muted);font-size:10px;letter-spacing:2px;font-weight:600}
+    .navlinks{display:flex;gap:25px;color:#d4e1e9;font-size:14px}
+    .navlinks a:hover{color:var(--cyan)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:0;border-radius:999px;padding:13px 20px;font-weight:800;cursor:pointer;transition:.25s;white-space:nowrap}
+    .btn:hover{transform:translateY(-3px);filter:brightness(1.08)}
+    .btn-primary{background:linear-gradient(135deg,var(--cyan),#71e8ef);color:#05202c;box-shadow:0 10px 28px #35d5e82c}
+    .btn-outline{border:1px solid #ffffff35;color:var(--white);background:#ffffff08}
+    .hero{max-width:1160px;margin:auto;padding:82px 22px 72px;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:50px;min-height:590px}
+    .eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--cyan);font-size:12px;font-weight:850;letter-spacing:2px;text-transform:uppercase}
+    .eyebrow:before{content:"";width:24px;height:2px;background:var(--gold)}
+    h1{font-size:clamp(42px,6vw,70px);line-height:1.04;letter-spacing:-2px;margin:20px 0}
+    h1 span{background:linear-gradient(90deg,var(--cyan),#fff);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .hero p{color:var(--muted);max-width:560px;font-size:17px}
+    .hero-actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}
+    .trust{display:flex;gap:22px;flex-wrap:wrap;margin-top:35px;color:#d3e1e9;font-size:13px}
+    .trust span:before{content:"✓";color:var(--gold);font-weight:900;margin-right:8px}
+    .hero-art{position:relative;min-height:390px;display:grid;place-items:center}
+    .orb{position:absolute;width:330px;height:330px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#35d5e866,#1675a833 48%,transparent 70%);filter:blur(2px)}
+    .machine-card{position:relative;width:min(100%,390px);padding:28px;border:1px solid #ffffff24;border-radius:28px;background:linear-gradient(145deg,#153b53dd,#091b2beF);box-shadow:0 30px 80px #0008;transform:rotate(2deg)}
+    .machine-icon{font-size:90px;text-align:center;filter:drop-shadow(0 12px 18px #0006)}
+    .machine-card h3{text-align:center;font-size:22px;margin:5px 0}
+    .machine-card p{text-align:center;font-size:13px;color:var(--muted)}
+    .mini-tags{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-top:18px}
+    .mini-tags span{font-size:11px;padding:7px 10px;border-radius:99px;background:#ffffff10;border:1px solid #ffffff18}
+    section{padding:78px 22px}
+    .section-inner{max-width:1160px;margin:auto}
+    .section-head{text-align:center;max-width:650px;margin:0 auto 38px}
+    .section-head h2{font-size:clamp(30px,4vw,43px);margin:12px 0}
+    .section-head p{color:var(--muted)}
+    .services{background:linear-gradient(180deg,#0a2031,#071b2d)}
+    .service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .service-card{padding:25px;border-radius:20px;border:1px solid #ffffff18;background:linear-gradient(145deg,#123149,#0a2031);transition:.25s;display:flex;flex-direction:column;min-height:230px}
+    .service-card:hover{transform:translateY(-6px);border-color:#35d5e877;box-shadow:0 18px 38px #0004}
+    .service-icon{font-size:36px;margin-bottom:12px}
+    .service-card h3{font-size:19px;margin-bottom:7px}
+    .service-card p{color:var(--muted);font-size:14px;flex:1}
+    .service-card button{margin-top:19px;align-self:flex-start;background:transparent;border:0;color:var(--cyan);font-weight:850;cursor:pointer;font-size:14px}
+    .service-card button:hover{color:#fff}
+    .why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .why{padding:22px;border-radius:17px;background:#ffffff08;border:1px solid #ffffff15}
+    .why b{display:block;margin:8px 0 4px}
+    .why p{font-size:13px;color:var(--muted)}
+    .contact{background:linear-gradient(135deg,#0c2d43,#071522)}
+    .contact-panel{border:1px solid #ffffff20;border-radius:26px;padding:38px;background:linear-gradient(120deg,#143e56,#0a2031);display:flex;align-items:center;justify-content:space-between;gap:25px}
+    .contact-panel h2{font-size:clamp(27px,4vw,40px);margin:8px 0}
+    .contact-panel p{color:var(--muted)}
+    footer{padding:25px 22px;text-align:center;color:#8fa6b6;font-size:13px;border-top:1px solid #ffffff12}
+    .float-wa{position:fixed;right:20px;bottom:20px;z-index:20;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:#25d366;color:#042313;font-size:28px;box-shadow:0 10px 30px #0007;transition:.2s}
+    .float-wa:hover{transform:scale(1.08)}
+    @media(max-width:800px){.hero{grid-template-columns:1fr;padding-top:58px;gap:15px}.hero-art{min-height:300px}.orb{width:270px;height:270px}.service-grid{grid-template-columns:repeat(2,1fr)}.why-grid{grid-template-columns:1fr}.contact-panel{align-items:flex-start;flex-direction:column}.navlinks{display:none}}
+    @media(max-width:520px){.topbar{justify-content:center}.service-grid{grid-template-columns:1fr}.hero{padding-bottom:40px}.machine-card{max-width:330px}.machine-icon{font-size:72px}section{padding:60px 18px}.contact-panel{padding:26px}}
+  </style>
+</head>
+<body>
+  <div class="topbar"><span>❄ Professional Repair & Service</span><span>📍 Serving your local area</span></div>
+  <header>
+    <nav>
+      <a class="brand" href="#home"><span class="brand-mark">❄</span><span>ABBAS REFRIGERATION<small>COOLING • REPAIR • CARE</small></span></a>
+      <div class="navlinks"><a href="#home">Home</a><a href="#services">Our Services</a><a href="#about">Why Choose Us</a><a href="#contact">Contact</a></div>
+      <a class="btn btn-primary" href="#services">Book a Service ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div>
+        <div class="eyebrow">Reliable home appliance service</div>
+        <h1>Cooling & Repair.<br><span>Done with Care.</span></h1>
+        <p>Welcome to Abbas Refrigeration. AC, cooler, washing machine, refrigerator and geyser repair services — with a focus on dependable work and customer care.</p>
+        <div class="hero-actions"><a class="btn btn-primary" href="#services">Explore Services →</a><a class="btn btn-outline" href="#" onclick="openWhatsApp('Hello Abbas Refrigeration, I want to enquire about your services.');return false;">Chat on WhatsApp</a></div>
+        <div class="trust"><span>Multiple appliance services</span><span>Direct WhatsApp booking</span><span>Customer-first support</span></div>
+      </div>
+      <div class="hero-art"><div class="orb"></div><div class="machine-card"><div class="machine-icon">❄️</div><h3>Complete Appliance Care</h3><p>One place for your home cooling and appliance needs.</p><div class="mini-tags"><span>AC</span><span>Cooler</span><span>Washing Machine</span><span>Fridge</span><span>Geyser</span></div></div></div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="section-inner">
+        <div class="section-head"><div class="eyebrow">What we do</div><h2>Choose Your Service</h2><p>Select an appliance below. WhatsApp will open with a ready-made message mentioning the service you chose.</p></div>
+        <div class="service-grid">
+          <article class="service-card"><div class="service-icon">❄️</div><h3>AC Service & Repair</h3><p>AC installation, servicing, cooling issues and repair enquiries.</p><button onclick="bookService('AC')">Book AC Service ↗</button></article>
+          <article class="service-card"><div class="service-icon">🌬️</div><h3>Air Cooler Service</h3><p>Cooler repair, cleaning, maintenance and related service enquiries.</p><button onclick="bookService('Cooler')">Book Cooler Service ↗</button></article>
+          <article class="service-card"><div class="service-icon">🫧</div><h3>Washing Machine</h3><p>Washing machine repair and service for common operating issues.</p><button onclick="bookService('Washing Machine')">Book Washing Machine ↗</button></article>
+          <article class="service-card"><div class="service-icon">🧊</div><h3>Refrigerator</h3><p>Fridge repair, cooling problem and maintenance enquiries.</p><button onclick="bookService('Refrigerator')">Book Refrigerator ↗</button></article>
+          <article class="service-card"><div class="service-icon">🚿</div><h3>Geyser Service</h3><p>Geyser repair, checking and maintenance enquiries.</p><button onclick="bookService('Geyser')">Book Geyser ↗</button></article>
+          <article class="service-card"><div class="service-icon">🛠️</div><h3>Other Appliance Work</h3><p>Need help with another appliance? Tell us what you need.</p><button onclick="bookService('Other Appliance Work')">Enquire Now ↗</button></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="section-inner">
+        <div class="section-head"><div class="eyebrow">Why Abbas Refrigeration</div><h2>Service Made Simple</h2><p>Clear service options and a quick way to contact us — no complicated booking process.</p></div>
+        <div class="why-grid">
+          <div class="why"><div class="service-icon">💬</div><b>Easy WhatsApp Booking</b><p>Choose your service and send your enquiry directly on WhatsApp.</p></div>
+          <div class="why"><div class="service-icon">🔧</div><b>Multiple Services</b><p>AC, cooler, washing machine, refrigerator, geyser and more.</p></div>
+          <div class="why"><div class="service-icon">🤝</div><b>Personal Support</b><p>Describe your issue and discuss the service you need directly with us.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="section-inner"><div class="contact-panel"><div><div class="eyebrow">Get in touch</div><h2>Need a repair?</h2><p>Message Abbas Refrigeration on WhatsApp and tell us what appliance needs attention.</p></div><a class="btn btn-primary" href="#" onclick="openWhatsApp('Hello Abbas Refrigeration, I want to book a service.');return false;">Message on WhatsApp ↗</a></div></div>
+    </section>
+  </main>
+  <footer>© <span id="year"></span> Abbas Refrigeration. All rights reserved.</footer>
+  <a class="float-wa" href="#" aria-label="Chat on WhatsApp" onclick="openWhatsApp('Hello Abbas Refrigeration, I need your service.');return false;">☏</a>
+
+  <script>
+    // IMPORTANT: Replace this with your WhatsApp number including country code.
+    // India example: 919876543210 (no +, spaces or dashes).
+    const WHATSAPP_NUMBER = "918944939477";
+
+    function openWhatsApp(message) {
+      if (WHATSAPP_NUMBER.includes("X")) {
+        alert("Please add your WhatsApp number in the website code first. Find WHATSAPP_NUMBER and replace 91XXXXXXXXXX with your number.");
+        return;
+      }
+      const url = "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(message);
+      window.open(url, "_blank", "noopener,noreferrer");
+    }
+
+    function bookService(service) {
+      const message = "Hi Abbas Refrigeration, I want a " + service + " service. Please share the details.";
+      openWhatsApp(message);
+    }
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
